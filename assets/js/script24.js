@@ -17,3 +17,10 @@ for (let n = 1; n<=10; n++){
         console.log(`${n} X ${y} = ${resultado}`)
     }
 }
+
+// for (let x = 1; x < 5; x++) {
+//     console.log(`Tabuada do número ${x}`)
+//     for (let y = 1; y < 5; y++){
+//         console.log(`${x} X ${y} = ${x*y}`)
+//     }
+// }
