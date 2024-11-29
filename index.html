@@ -8,7 +8,17 @@
 <body>
     <h1>Olá, Mundo</h1>
     <p>Olá, Javascript</p>
+    <p> <button id="botao" onclick="clicou()" >Clique em mim </button></p>
 
-    <script src="assets/js/script10.js"></script>
+    <script>
+
+
+function clicou () {
+    window.alert('Clicou')
+}
+let botao = document.querySelector('#botao')
+botao.addEventListener("click",clicou)
+
+    </script>
 </body>
 </html>
