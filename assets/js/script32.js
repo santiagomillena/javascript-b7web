@@ -1,7 +1,15 @@
 function clicou () {
     let input = document.querySelector('input')
-    
-    input.setAttribute('placeholder','Alterado')
+    let botao = document.querySelector('#botao')
+
+
+    if ( input.getAttribute('type')==='text'){
+        input.setAttribute('type', 'password')
+        botao.innerHTML = 'Mostrar Senha'
+    } else {
+        input.setAttribute('type', 'text')
+        botao.innerHTML = 'Ocultar Senha'
+    }
 }
 
 
