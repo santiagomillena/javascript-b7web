@@ -25,7 +25,7 @@ function apertou(){
     let newLi = document.createElement('li') 
         newLi.innerHTML = document.querySelector('#inputDados').value
         ul.append(newLi)
-    document.querySelector('#inputDados').value = '' 
+        document.querySelector('#inputDados').value = '' 
 }
 
 function customReset() {
@@ -33,6 +33,7 @@ function customReset() {
 }
 
 //OUTRA RESOLUÇÃO
+
 // ELEMENTOS
 
 const input = document.querySelector('#inputDados')
@@ -46,7 +47,7 @@ function handleKeyUp(event) {
         const newLi = document.createElement('li')
         newLi.innerHTML = input.value
         ul.appendChild(newLi)
-        
+
         //Limpa o campo de texto
         input.value = ''
     }
@@ -55,5 +56,3 @@ function handleKeyUp(event) {
 // EVENTOS
 
 input.addEventListener('keyup', handleKeyUp)
-
-// OUTROS
