@@ -1,4 +1,10 @@
 let char = new Knight('Croft');
-console.log(char.name)
-console.log(char.life)
-console.log(char.attack)
+let monster = new BigMonster();
+
+let stage = new Stage(
+    char,
+    monster,
+    document.querySelector('#char'),
+    document.querySelector('#monster')
+)
+stage.start();
