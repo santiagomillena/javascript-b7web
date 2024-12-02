@@ -2,8 +2,8 @@ document.getElementById('inputDados').addEventListener('keydown', function (even
     if (event.key === 'Enter') { // Verifica se a tecla pressionada é "Enter"
     verificar(); // Chama a função "verificar"
     }
-    });
-    
+});
+
 function verificar(){
     var group = document.getElementById("inputDados").value
     var dados = group.value
