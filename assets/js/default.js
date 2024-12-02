@@ -4,20 +4,20 @@ document.getElementById('inputDados').addEventListener('keydown', function (even
     }
     
     });
-    function verificar(){
-        var group = document.getElementById("inputDados").value
-        var dados = group.value
-        var result = document.getElementById ('result')
+function verificar(){
+    var group = document.getElementById("inputDados").value
+    var dados = group.value
+    var result = document.getElementById ('result')
 
-        if (document.getElementById('inputDados').value == ("")) {
-        alert('Por favor, insira algum dado')
-        return
-        } else {
-            var img = document.createElement('img')
-            img.setAttribute('id', 'photo')
-         if (group == 'aespa') {
-            result.innerHTML = '<p>Você é um MY!<p>'
-            img.setAttribute ('src', 'imagens/aespa250px.png')
+    if (document.getElementById('inputDados').value == ("")) {
+    alert('Por favor, insira algum dado')
+    return
+    } else {
+        var img = document.createElement('img')
+        img.setAttribute('id', 'photo')
+        if (group == 'aespa') {
+        result.innerHTML = '<p>Você é um MY!<p>'
+        img.setAttribute ('src', 'imagens/aespa250px.png')
         } else if (group == 'blackpink') {
             result.innerHTML = '<p>Você é um BLINK!</p>'
             img.setAttribute ('src', 'imagens/blackpink250px.png')
@@ -31,8 +31,8 @@ document.getElementById('inputDados').addEventListener('keydown', function (even
             result.innerHTML = '<p>Desculpe, grupo não reconhecido.</p>';
             img.setAttribute ('src', 'imagens/interrogacao.png')
         }
-        result.appendChild(img)
-        document.getElementById('inputDados').value = ""
+    result.appendChild(img)
+    document.getElementById('inputDados').value = ""
     }
 }
     function customReset (){
