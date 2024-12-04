@@ -40,7 +40,7 @@ body {
 .rightside input {
     width: 100%;
     border: 1px solid #999;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 8px;
     font-size: 14px;
     outline: 0;
